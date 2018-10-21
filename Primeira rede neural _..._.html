@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Your_first_neural_network</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Primeira rede neural >...<</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Your-first-neural-network">Your first neural network<a class="anchor-link" href="#Your-first-neural-network">&#182;</a></h1><p>In this project, you'll build your first neural network and use it to predict daily bike rental ridership. We've provided some of the code, but left the implementation of the neural network up to you (for the most part). After you've submitted this project, feel free to explore the data and the model more.</p>
+<h1 id="Sua-primeira-rede-neural">Sua primeira rede neural<a class="anchor-link" href="#Sua-primeira-rede-neural">&#182;</a></h1><p>Neste projeto, você construirá sua primeira rede neural e a utilizará para prever o número de usuários diários de aluguel de bicicletas. Fornecemos alguns códigos, mas deixamos a implementação da rede neural até você (na maior parte do tempo). Depois de enviar este projeto, sinta-se à vontade para explorar mais os dados e o modelo.</p>
 
 </div>
 </div>
@@ -11804,7 +11804,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Load-and-prepare-the-data">Load and prepare the data<a class="anchor-link" href="#Load-and-prepare-the-data">&#182;</a></h2><p>A critical step in working with neural networks is preparing the data correctly. Variables on different scales make it difficult for the network to efficiently learn the correct weights. Below, we've written the code to load and prepare the data. You'll learn more about this soon!</p>
+<h2 id="Carregar-e-preparar-os-dados">Carregar e preparar os dados<a class="anchor-link" href="#Carregar-e-preparar-os-dados">&#182;</a></h2><p>Um passo crítico no trabalho com redes neurais é preparar os dados corretamente. Variáveis ​​em diferentes escalas dificultam que a rede aprenda com eficiência os pesos corretos. Abaixo, escrevemos o código para carregar e preparar os dados. Você aprenderá mais sobre isso em breve!</p>
 
 </div>
 </div>
@@ -12000,8 +12000,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Checking-out-the-data">Checking out the data<a class="anchor-link" href="#Checking-out-the-data">&#182;</a></h2><p>This dataset has the number of riders for each hour of each day from January 1 2011 to December 31 2012. The number of riders is split between casual and registered, summed up in the <code>cnt</code> column. You can see the first few rows of the data above.</p>
-<p>Below is a plot showing the number of bike riders over the first 10 days or so in the data set. (Some days don't have exactly 24 entries in the data set, so it's not exactly 10 days.) You can see the hourly rentals here. This data is pretty complicated! The weekends have lower over all ridership and there are spikes when people are biking to and from work during the week. Looking at the data above, we also have information about temperature, humidity, and windspeed, all of these likely affecting the number of riders. You'll be trying to capture all this with your model.</p>
+<h2 id="Verificando-os-dados">Verificando os dados<a class="anchor-link" href="#Verificando-os-dados">&#182;</a></h2><p>Este conjunto de dados tem o número de pilotos para cada hora de cada dia de 1 de janeiro de 2011 a 31 de dezembro de 2012. O número de pilotos é dividido entre casual e registrado, resumido na coluna <code>cnt</code>. Você pode ver as primeiras linhas dos dados acima.</p>
+<p>Abaixo está um gráfico mostrando o número de ciclistas nos primeiros 10 dias ou mais no conjunto de dados. (Alguns dias não têm exatamente 24 entradas no conjunto de dados, portanto, não são exatamente 10 dias.) Você pode ver as locações por hora aqui. Esses dados são bem complicados! Os fins de semana são mais baixos em todos os passageiros e há picos quando as pessoas estão pedalando para ir e voltar do trabalho durante a semana. Olhando para os dados acima, também temos informações sobre temperatura, umidade e velocidade do vento, todas elas provavelmente afetando o número de passageiros. Você tentará capturar tudo isso com o seu modelo.</p>
 
 </div>
 </div>
@@ -12060,7 +12060,7 @@ height=254
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dummy-variables">Dummy variables<a class="anchor-link" href="#Dummy-variables">&#182;</a></h3><p>Here we have some categorical variables like season, weather, month. To include these in our model, we'll need to make binary dummy variables. This is simple to do with Pandas thanks to <code>get_dummies()</code>.</p>
+<h3 id="Vari&#225;veis-Dummies">Vari&#225;veis Dummies<a class="anchor-link" href="#Vari&#225;veis-Dummies">&#182;</a></h3><p>Aqui temos algumas variáveis  categóricas como estação, clima, mês. Para incluí-los em nosso modelo, precisaremos fazer variáveis dummy binárias. Isto é simples de fazer com os Pandas graças a <code>get_dummies()</code>.</p>
 
 </div>
 </div>
@@ -12274,8 +12274,8 @@ height=254
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Scaling-target-variables">Scaling target variables<a class="anchor-link" href="#Scaling-target-variables">&#182;</a></h3><p>To make training the network easier, we'll standardize each of the continuous variables. That is, we'll shift and scale the variables such that they have zero mean and a standard deviation of 1.</p>
-<p>The scaling factors are saved so we can go backwards when we use the network for predictions.</p>
+<h3 id="Dimensionamento-de-vari&#225;veis-de-destino">Dimensionamento de vari&#225;veis de destino<a class="anchor-link" href="#Dimensionamento-de-vari&#225;veis-de-destino">&#182;</a></h3><p>Para facilitar o treinamento da rede, padronizaremos cada uma das variáveis contínuas. Ou seja, vamos mudar e dimensionar as variáveis de forma que elas tenham média zero e um desvio padrão de 1.</p>
+<p>Os fatores de escala são salvos para que possamos retroceder quando usamos a rede para previsões.</p>
 
 </div>
 </div>
@@ -12303,7 +12303,7 @@ height=254
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Splitting-the-data-into-training,-testing,-and-validation-sets">Splitting the data into training, testing, and validation sets<a class="anchor-link" href="#Splitting-the-data-into-training,-testing,-and-validation-sets">&#182;</a></h3><p>We'll save the data for the last approximately 21 days to use as a test set after we've trained the network. We'll use this set to make predictions and compare them with the actual number of riders.</p>
+<h3 id="Dividindo-os-dados-em-conjuntos-de-treinamento,-teste-e-valida&#231;&#227;o">Dividindo os dados em conjuntos de treinamento, teste e valida&#231;&#227;o<a class="anchor-link" href="#Dividindo-os-dados-em-conjuntos-de-treinamento,-teste-e-valida&#231;&#227;o">&#182;</a></h3><p>Salvaremos os dados dos últimos 21 dias para usar como um conjunto de testes após termos treinado a rede. Usaremos esse conjunto para fazer previsões e compará-las com o número real de passageiros.</p>
 
 </div>
 </div>
@@ -12334,7 +12334,7 @@ height=254
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We'll split the data into two sets, one for training and one for validating as the network is being trained. Since this is time series data, we'll train on historical data, then try to predict on future data (the validation set).</p>
+<p>Vamos dividir os dados em dois conjuntos, um para treinamento e outro para validação conforme a rede estiver sendo treinada. Como são dados de séries temporais, vamos treinar dados históricos e tentar prever dados futuros (o conjunto de validação).</p>
 
 </div>
 </div>
@@ -12358,10 +12358,10 @@ height=254
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Time-to-build-the-network">Time to build the network<a class="anchor-link" href="#Time-to-build-the-network">&#182;</a></h2><p>Below you'll build your network. We've built out the structure. You'll implement both the forward pass and backwards pass through the network. You'll also set the hyperparameters: the learning rate, the number of hidden units, and the number of training passes.</p>
+<h2 id="Hora-de-construir-a-rede">Hora de construir a rede<a class="anchor-link" href="#Hora-de-construir-a-rede">&#182;</a></h2><p>Abaixo você construirá sua rede. Nós construímos a estrutura. Você implementará o passe para frente e o para trás na rede. Você também definirá os hiperparâmetros: a taxa de aprendizado, o número de unidades ocultas e o número de passes de treinamento.</p>
 <p><img src="assets/neural_network.png" width=300px></p>
-<p>The network has two layers, a hidden layer and an output layer. The hidden layer will use the sigmoid function for activations. The output layer has only one node and is used for the regression, the output of the node is the same as the input of the node. That is, the activation function is $f(x)=x$. A function that takes the input signal and generates an output signal, but takes into account the threshold, is called an activation function. We work through each layer of our network calculating the outputs for each neuron. All of the outputs from one layer become inputs to the neurons on the next layer. This process is called <em>forward propagation</em>.</p>
-<p>We use the weights to propagate signals forward from the input to the output layers in a neural network. We use the weights to also propagate error backwards from the output back into the network to update our weights. This is called <em>backpropagation</em>.</p>
+<p>A rede tem duas camadas, uma camada oculta e uma camada de saída. A camada oculta usará a função sigmóide para ativações. A camada de saída tem apenas um nó e é usada para a regressão, a saída do nó é a mesma que a entrada do nó. Ou seja, a função de ativação é $ f (x) = x $. Uma função que recebe o sinal de entrada e gera um sinal de saída, mas leva em consideração o limite, é chamada de função de ativação. Trabalhamos através de cada camada de nossa rede, calculando as saídas para cada neurônio. Todas as saídas de uma camada se tornam entradas para os neurônios na próxima camada. Este processo é chamado <em> propagação direta </em>.</p>
+<p>Usamos os pesos para propagar os sinais da entrada para as camadas de saída em uma rede neural. Usamos os pesos para também propagar o erro da saída de volta para a rede para atualizar nossos pesos. Isso é chamado de <em> backpropagation </em>.</p>
 <blockquote><p><strong>Hint:</strong> You'll need the derivative of the output activation function ($f(x) = x$) for the backpropagation implementation. If you aren't familiar with calculus, this function is equivalent to the equation $y = x$. What is the slope of that equation? That is the derivative of $f(x)$.</p>
 </blockquote>
 <p>Below, you have these tasks:</p>
@@ -12410,7 +12410,7 @@ height=254
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Unit-tests">Unit tests<a class="anchor-link" href="#Unit-tests">&#182;</a></h2><p>Run these unit tests to check the correctness of your network implementation. This will help you be sure your network was implemented correctly befor you starting trying to train it. These tests must all be successful to pass the project.</p>
+<h2 id="Testes-unit&#225;rios">Testes unit&#225;rios<a class="anchor-link" href="#Testes-unit&#225;rios">&#182;</a></h2><p>Execute estes testes unitários para verificar a exatidão de sua implementação de rede. Isso ajudará você a ter certeza de que sua rede foi implementada corretamente antes de começar a treiná-la. Todos estes testes devem ser bem sucedidos para passar o projeto.</p>
 
 </div>
 </div>
@@ -12524,12 +12524,12 @@ OK
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Training-the-network">Training the network<a class="anchor-link" href="#Training-the-network">&#182;</a></h2><p>Here you'll set the hyperparameters for the network. The strategy here is to find hyperparameters such that the error on the training set is low, but you're not overfitting to the data. If you train the network too long or have too many hidden nodes, it can become overly specific to the training set and will fail to generalize to the validation set. That is, the loss on the validation set will start increasing as the training set loss drops.</p>
-<p>You'll also be using a method know as Stochastic Gradient Descent (SGD) to train the network. The idea is that for each training pass, you grab a random sample of the data instead of using the whole data set. You use many more training passes than with normal gradient descent, but each pass is much faster. This ends up training the network more efficiently. You'll learn more about SGD later.</p>
-<h3 id="Choose-the-number-of-iterations">Choose the number of iterations<a class="anchor-link" href="#Choose-the-number-of-iterations">&#182;</a></h3><p>This is the number of batches of samples from the training data we'll use to train the network. The more iterations you use, the better the model will fit the data. However, this process can have sharply diminishing returns and can waste computational resources if you use too many iterations.  You want to find a number here where the network has a low training loss, and the validation loss is at a minimum. The ideal number of iterations would be a level that stops shortly after the validation loss is no longer decreasing.</p>
-<h3 id="Choose-the-learning-rate">Choose the learning rate<a class="anchor-link" href="#Choose-the-learning-rate">&#182;</a></h3><p>This scales the size of weight updates. If this is too big, the weights tend to explode and the network fails to fit the data. Normally a good choice to start at is 0.1; however, if you effectively divide the learning rate by n_records, try starting out with a learning rate of 1. In either case, if the network has problems fitting the data, try reducing the learning rate. Note that the lower the learning rate, the smaller the steps are in the weight updates and the longer it takes for the neural network to converge.</p>
-<h3 id="Choose-the-number-of-hidden-nodes">Choose the number of hidden nodes<a class="anchor-link" href="#Choose-the-number-of-hidden-nodes">&#182;</a></h3><p>In a model where all the weights are optimized, the more hidden nodes you have, the more accurate the predictions of the model will be.  (A fully optimized model could have weights of zero, after all.) However, the more hidden nodes you have, the harder it will be to optimize the weights of the model, and the more likely it will be that suboptimal weights will lead to overfitting. With overfitting, the model will memorize the training data instead of learning the true pattern, and won't generalize well to unseen data.</p>
-<p>Try a few different numbers and see how it affects the performance. You can look at the losses dictionary for a metric of the network performance. If the number of hidden units is too low, then the model won't have enough space to learn and if it is too high there are too many options for the direction that the learning can take. The trick here is to find the right balance in number of hidden units you choose.  You'll generally find that the best number of hidden nodes to use ends up being between the number of input and output nodes.</p>
+<h2 id="Treinando-a-rede">Treinando a rede<a class="anchor-link" href="#Treinando-a-rede">&#182;</a></h2><p>Aqui você configurará os hiperparâmetros para a rede. A estratégia aqui é encontrar hiperparâmetros de forma que o erro no conjunto de treinamento seja baixo, mas você não está super adaptando aos dados. Se você treinar a rede por muito tempo ou tiver muitos nós ocultos, ela poderá se tornar excessivamente específica para o conjunto de treinamento e falhará em generalizar para o conjunto de validação. Ou seja, a perda no conjunto de validação começará a aumentar à medida que a perda do conjunto de treinamento cair.</p>
+<p>Você também usará um método conhecido como Descentramento Estocástico de Gradiente (SGD) para treinar a rede. A ideia é que, para cada passe de treinamento, você pegue uma amostra aleatória dos dados em vez de usar o conjunto de dados inteiro. Você usa muito mais passes de treinamento do que com descida de gradiente normal, mas cada passe é muito mais rápido. Isso acaba treinando a rede de forma mais eficiente. Você aprenderá mais sobre o SGD mais tarde.</p>
+<h3 id="Escolha-o-n&#250;mero-de-itera&#231;&#245;es">Escolha o n&#250;mero de itera&#231;&#245;es<a class="anchor-link" href="#Escolha-o-n&#250;mero-de-itera&#231;&#245;es">&#182;</a></h3><p>Esse é o número de lotes de amostras dos dados de treinamento que usaremos para treinar a rede. Quanto mais iterações você usar, melhor o modelo se ajustará aos dados. No entanto, esse processo pode ter retornos bastante reduzidos e pode desperdiçar recursos computacionais se você usar muitas iterações. Você deseja encontrar um número aqui em que a rede tenha uma baixa perda de treinamento e a perda de validação seja mínima. O número ideal de iterações seria um nível que pára logo após a perda de validação não estar mais diminuindo.</p>
+<h3 id="Escolha-a-taxa-de-aprendizado">Escolha a taxa de aprendizado<a class="anchor-link" href="#Escolha-a-taxa-de-aprendizado">&#182;</a></h3><p>Isso dimensiona o tamanho das atualizações de peso. Se isso for muito grande, os pesos tendem a explodir e a rede não consegue ajustar os dados. Normalmente, uma boa escolha para começar é 0,1; no entanto, se você dividir efetivamente a taxa de aprendizado por n_records, tente começar com uma taxa de aprendizado de 1. Em ambos os casos, se a rede tiver problemas para ajustar os dados, tente reduzir a taxa de aprendizado. Observe que quanto menor a taxa de aprendizado, menores são as etapas nas atualizações de peso e mais tempo leva para a rede neural convergir.</p>
+<h3 id="Escolha-o-n&#250;mero-de-n&#243;s-ocultos">Escolha o n&#250;mero de n&#243;s ocultos<a class="anchor-link" href="#Escolha-o-n&#250;mero-de-n&#243;s-ocultos">&#182;</a></h3><p>Em um modelo em que todos os pesos são otimizados, quanto mais nós ocultos você tiver, mais precisas serão as previsões do modelo. (Um modelo totalmente otimizado poderia ter pesos de zero, afinal.) No entanto, quanto mais nós ocultos você tiver, mais difícil será otimizar os pesos do modelo, e mais provável será que os pesos abaixo do ideal levem a overfitting. Com overfitting, o modelo memorizará os dados de treinamento em vez de aprender o padrão verdadeiro e não generalizará bem os dados não vistos.</p>
+<p>Tente alguns números diferentes e veja como isso afeta o desempenho. Você pode olhar o dicionário de perdas para uma métrica do desempenho da rede. Se o número de unidades ocultas for muito baixo, o modelo não terá espaço suficiente para aprender e, se estiver muito alto, haverá muitas opções para a direção que o aprendizado pode tomar. O truque aqui é encontrar o equilíbrio certo no número de unidades ocultas que você escolher. Geralmente, você descobrirá que o melhor número de nós ocultos a usar acaba sendo entre o número de nós de entrada e saída.</p>
 
 </div>
 </div>
@@ -12664,7 +12664,7 @@ height=250
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Check-out-your-predictions">Check out your predictions<a class="anchor-link" href="#Check-out-your-predictions">&#182;</a></h2><p>Here, use the test data to view how well your network is modeling the data. If something is completely wrong here, make sure each step in your network is implemented correctly.</p>
+<h2 id="Confira-suas-previs&#245;es">Confira suas previs&#245;es<a class="anchor-link" href="#Confira-suas-previs&#245;es">&#182;</a></h2><p>Aqui, use os dados de teste para ver como sua rede está modelando os dados. Se algo estiver completamente errado aqui, verifique se cada etapa da sua rede está implementada corretamente.</p>
 
 </div>
 </div>
